@@ -1,0 +1,6 @@
+<h2><%= @post.title %></h2>
+<p><%= @post.description %></p>
+<%= image_tag @post.image.url(:medium) %>
+<br/><br/>
+<%= link_to 'Edit', edit_post_path %> |
+<%= link_to 'Delete', post_path, method: :delete %>

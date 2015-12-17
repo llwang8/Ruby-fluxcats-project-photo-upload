@@ -1,0 +1,15 @@
+<%= form_for @post do |f| %>
+    <%= f.label :title %><br/>
+    <%= f.text_field :title, class: 'form-control' %>
+    <br/>
+    <br/>
+    <%= f.label :description %><br/>
+    <%= f.text_area :description, class: 'form-control' %>
+    <br/>
+    <br/>
+    <%= f.label :image %>
+    <%= f.file_field :image, class: 'form-control' %>
+    <br/>
+    <br/>
+    <%= f.submit 'Upload', class:'btn btn-primary' %>
+<% end %>
